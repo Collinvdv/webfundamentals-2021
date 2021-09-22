@@ -1,0 +1,8 @@
+h1, h2 {
+    color: green;
+    text-decoration: underline;
+}
+
+h2 {
+    color: red;
+}
