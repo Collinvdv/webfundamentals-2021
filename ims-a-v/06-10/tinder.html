@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Tinder create account
+        </h1>
+        <form method="GET" action="index.html">
+            <div>
+                <label for="form-firstname">
+                    Firstname
+                </label>
+                <br>
+                <input type="text" name="firstname" id="form-firstname" required />
+            </div>
+
+            <div>
+                <label for="form-familyname">
+                    Family name
+                </label>
+                <br>
+                <input type="text" name="familyname" id="form-familyname" placeholder="Give me your familyname" required/>
+            </div>
+
+            <div>
+                <label for="form-age">
+                    Your age
+                </label>
+                <br>
+                <input type="number" name="age" id="form-age"/>
+            </div>
+
+            <div>
+                <label for="form-email">
+                    E-mail
+                </label>
+                <br>
+                <input type="email" name="email" id="form-email">
+            </div>
+
+            <div>
+                <input type="hidden" name="userid" value="50500">
+            </div>
+
+            <div>
+                <label for="form-dob">
+                    Date of birth
+                </label>
+                <br>
+                <input type="date" name="dob" id="form-dob">
+            </div>
+
+            <div>
+                <input type="radio" value="male" name="gender" id="form-gender-male" checked>
+                <label for="form-gender-male"> m </label>
+
+                <br>
+                <input type="radio" value="female" name="gender" id="form-gender-female">
+                <label for="form-gender-female"> v </label>
+
+                <br>
+                <input type="radio" value="x" name="gender" id="form-gender-x">
+                <label for="form-gender-x"> x </label>
+            </div>
+
+            <div>
+                <label for="form-pref-gender">
+                    Preferred gender
+                </label>
+                <select name="pref-gender" id="form-pref-gender">
+                    <option value="v">
+                        Female
+                    </option>
+
+                    <option value="m">
+                        Male
+                    </option>
+
+                    <option value="x">
+                        x
+                    </option>
+                </select>
+            </div>
+
+            <div>
+                <label for="form-profile-picture">
+                    Profile picture
+                </label>   
+                <br>
+                <input type="file" name="profile-picture" id="form-profile-picture">
+            </div>
+
+            <div>
+                <label>
+                    Hobbies
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="form-hobbies-vis" name="hobbies-vis" value="vis">
+                <label for="form-hobbies-vis">
+                    Visjes vangen
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="form-hobbies-breien" name="hobbies-breien" value="breien">
+                <label for="form-hobbies-breien">
+                    Breien
+                </label>
+            </div>
+
+            <div>
+                <label for="form-password">
+                    Password
+                </label>
+                <input type="password" name="password" id="form-password">
+            </div>
+
+            <div>
+                <label for="form-color">
+                    Color
+                </label>
+                <input type="color" name="color" id="form-color">
+            </div>
+
+            <div>
+                <label for="form-life-description">
+                    Zegt iets over uw leven
+                </label>
+                <textarea id="form-life-description" name="life-description" cols="100" rows="10"></textarea>
+            </div>
+
+            <!-- Here you can click on the form -->
+            <br>
+            <br>
+            <input type="submit" value="Send form">
+        </form>
+    </body>
+</html>
