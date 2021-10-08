@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Create your tinder page
+        </h1>
+
+        <form method="GET" action="created_profile.html">
+            <!-- Name -->
+            <div>
+                <label for="form-firstname">
+                    Firstname
+                </label>
+                <br>
+                <input type="text" name="firstname" id="form-firstname" placeholder="Give me your name (FE: brad)" required>
+            </div>
+
+            <!-- Family name -->
+            <div>
+                <label for="form-familyname">
+                    Familyname
+                </label>
+                <br>
+                <input type="text" name="familyname" id="form-familyname" value="Van der Vorst" />
+            </div>
+
+            <!-- Age -->
+            <div>
+                <label for="form-age">
+                    Age
+                </label>
+                <br>
+                <input type="number" name="age" id="form-age" min="18">
+            </div>
+
+            <!-- Date of birth -->
+            <div>
+                <label for="form-dob">
+                    Date of Birth
+                </label>
+                <br>
+                <input type="date" name="dob" id="form-dob">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="form-mail">
+                    E-mail
+                </label>
+                <br>
+                <input type="email" name="mail" id="form-mail">
+            </div>
+
+            <!--  Profile picture -->
+            <div>
+                <label for="form-profilepicture">
+                    Profile picture
+                </label>
+                <br>
+                <input type="file" name="profile-picture" id="form-profilepicture">
+            </div>
+
+            <!-- Favorite color -->
+            <div>
+                <label for="form-color">
+                    Favorite color
+                </label>
+                <br>
+                <input type="color" name="color" id="form-color">
+            </div>
+
+            <!-- Gender -->
+            <div>
+                <input type="radio" name="gender" value="male" id="form-gender-male" checked>
+                <label for="form-gender-male">
+                    Male
+                </label>
+
+                <br>
+
+                <input type="radio" name="gender" value="female" id="form-gender-female">
+                <label for="form-gender-female">
+                    Female
+                </label>
+
+                <br>
+
+                <input type="radio" name="gender" value="x" id="form-gender-x">
+                <label for="form-gender-x">
+                    X
+                </label>
+            </div>
+
+            <!-- Preferred gender -->
+            <div>
+                <label for="form-pref-gender">
+                    Prefered gender
+                </label>
+
+                <select name="pref-gender" id="form-pref-gender">
+                    <option value="male">
+                        Male
+                    </option>
+
+                    <option value="female">
+                        Female
+                    </option>
+
+                    <option value="x">
+                        X
+                    </option>
+                </select>
+            </div>
+
+            <!-- Hobbies -->
+            <div>
+                <label>
+                    Hobbies
+                </label>
+
+                <!-- Fishing -->
+                <input type="checkbox" name="hobbies-fishing" value="fishing" id="form-hobbies-fishing">
+                <label for="form-hobbies-fishing">
+                    Fishing
+                </label>
+
+                <!-- Formule 1 driving -->
+                <input type="checkbox" name="hobbies-formule1" value="formule1" id="form-hobbies-formule1">
+                <label for="form-hobbies-formule1">
+                    Formule1
+                </label>
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label for="form-password">
+                    Password
+                </label>
+                <br>
+                <input type="password" name="password" id="form-password">
+            </div>
+
+            <!-- Textarea -->
+            <div>
+                <label for="form-description">
+                    Description
+                </label>
+                <br>
+                <textarea name="description" id="form-description" rows="10" cols="100">CollinI am so alone</textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit">
+                Submit the form
+            </button>
+        </form>
+
+        <button>
+            
+        </button>
+    </body>
+</html>
