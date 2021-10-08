@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Create profile
+        </h1>
+
+        <form method="GET" action="onlyfans.html">
+            <!-- Nickname -->
+            <div>
+                <label for="form-nickname">
+                    Nickname
+                </label>
+                <br>
+                <input type="text" name="nickname" id="form-nickname" placeholder="Give me your nickname" required>
+            </div>
+
+            <!-- City -->
+            <div>
+                <label for="form-city">
+                    City
+                </label>
+                <br>
+                <input type="text" name="city" id="form-city">
+            </div>
+
+            <!-- Age -->
+            <div>
+                <label for="form-age">
+                    Age
+                </label>
+                <br>
+                <input type="number" name="age" id="form-age" min="18" max="65">
+            </div>
+
+            <!-- Date of birth -->
+            <div>
+                <label for="form-dob">
+                    Date of birth
+                </label>
+                <br>
+                <input type="date" name="dob" id="form-dob">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="form-email">
+                    E-mail
+                </label>
+                <br>
+                <input type="email" name="email" id="form-email">
+            </div>
+
+            <!-- Profilepic -->
+            <div>
+                <label for="form-profilepic">
+                    Profile picture
+                </label>
+                <br>
+                <input type="file" name="profilepic" id="form-profilepic">
+            </div>
+
+            <!-- Favorite color -->
+            <div>
+                <label for="form-favorite-color">
+                    Favorite color
+                </label>
+                <br>
+                <input type="color" name="favorite-color" id="form-favorite-color">
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label for="form-password">
+                    Password
+                </label>
+                <br>
+                <input type="password" name="password" id="form-password">
+            </div>
+
+            <!-- Gender -->
+            <div>
+                <input type="radio" name="gender" value="female" id="form-gender-female" checked>
+                <label for="form-gender-female">
+                    Female
+                </label>
+
+                <br>
+                <input type="radio" name="gender" value="male" id="form-gender-male">
+                <label for="form-gender-male">
+                    Male
+                </label>
+
+                <br>
+                <input type="radio" name="gender" value="x" id="form-gender-x">
+                <label for="form-gender-x">
+                    X
+                </label>
+            </div>
+
+            <!-- Preferred gender -->
+            <div>
+                <label for="form-pref-gender">
+                    Pref gender
+                </label>
+
+                <br>
+                <select name="pref-gender" id="form-pref-gender">
+                    <option value="female">
+                        Female
+                    </option>
+                    <option value="male">
+                        male
+                    </option>
+                    <option value="x">
+                        x
+                    </option>
+                </select>
+            </div>
+
+            <!-- Hobbies -->
+            <div>
+                <label>
+                    Hobbies
+                </label>
+                <br>
+                <input type="checkbox" name="hobbies_breien" value="breien" id="form-hobbies-breien">
+                <label for="form-hobbies-breien">
+                    Breien
+                </label>
+
+                <br>
+
+                <input type="checkbox" name="hobbies_vissen" value="vissen" id="form-hobbies-vissen">
+                <label for="form-hobbies-vissen">
+                    Vissen
+                </label>
+            </div>
+
+            <!-- Biographie -->
+            <div>
+                <label for="form-biographie">
+                    Biographie
+                </label>
+                <br>
+                <textarea name="biographie" id="form-biographie" rows="10" cols="50"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit">
+                Create profile
+            </button>
+        </form>
+    </body>
+</html>
