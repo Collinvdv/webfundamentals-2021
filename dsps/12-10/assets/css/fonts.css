@@ -1,0 +1,50 @@
+h1 {
+    font-family: "Georgia", "Times New Roman", sans-serif;
+    color: salmon;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: 'Birthstone', cursive;
+}
+
+h1 {
+    background-color: lightblue;
+
+    padding: 40px; /* top/right/bottom/left */
+
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 0;
+
+    margin: 100px;
+
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+
+    margin: 100px 100px 100px 100px;
+}
+
+
+
+.projects {
+    background-color: darkred;
+    padding: 40px;
+}
+
+.project {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+
+    font-size: 40px;
+}

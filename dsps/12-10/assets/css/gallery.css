@@ -1,0 +1,28 @@
+body {
+    background-color: lightcyan;
+    /* background-image: url("../images/goat-small.jpeg"); */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-y; */
+    /* background-size: cover; */
+}
+
+h1 {
+    border-style: dashed;
+    border-width: 5px;
+    border-color: green;
+
+    border: 1px solid green;
+    border-radius: 20px;
+}
+
+.profile-pic {
+    width: 500px;
+    height: 500px;
+
+    border-radius: 100%;
+
+    background-image: url("../images/goat-small.jpeg");
+    background-size: cover;
+    background-position: center center;
+
+}

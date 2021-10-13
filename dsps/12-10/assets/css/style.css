@@ -1,0 +1,45 @@
+/*
+    -- Typography (everything with text)
+*/
+h1, h2, p {
+    color: re;
+    background-color: lightblue;
+}
+
+h2 {
+    color: white;
+}
+
+/*
+    -- Classes
+*/
+.heading1 {
+    color: AppleBlueGreen;
+}
+
+.heading1 {
+    color: #002642; 
+}
+
+
+.text {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+div .heading2 {
+    text-decoration: underline;
+}
+
+div .section-block-title .heading2 {
+    color: orange;
+}
+/*
+    -- id
+*/
+#homepage-title {
+    color: green;
+}
