@@ -1,0 +1,12 @@
+h1 {
+    font-family:  Georgia, "Times New Roman", serif;
+    color: red;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Akronim', cursive;
+}

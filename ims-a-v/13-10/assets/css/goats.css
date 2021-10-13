@@ -1,0 +1,27 @@
+body {
+    background-color: green;
+    /* background-image: url("../images/goats.jpeg"); */
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 100%;
+    background-image: url("../images/goats.jpeg");
+
+    border: 5px solid white;
+    background-size: cover;
+}
+
+h1 {
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: blue; */
+
+    border: 5px dotted blue;
+
+    border-top: 5px solid red;
+
+    border-top-left-radius: 50px;
+}

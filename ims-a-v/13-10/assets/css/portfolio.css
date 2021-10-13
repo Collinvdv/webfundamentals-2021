@@ -1,0 +1,31 @@
+.section {
+    background-color: lightseagreen;
+}
+
+.container {
+    background-color: lightgrey;
+    width: 50%;
+    margin: 0 auto;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+.square {
+    background-color: rebeccapurple;
+    /* display: inline; */
+    display: block;
+
+    opacity: 0;
+
+    height: 400px;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,30 @@
+/*
+Style the tagnames
+*/
+h1, h2, h3 {
+    color: #3489c2;
+    text-decoration: underline;
+}
+
+.background-red {
+    background-color: red;
+}
+
+/* 
+    Classes
+*/
+.title-green {
+    color: appleblueseegreen;
+}
+
+/*
+    Id
+*/
+
+h2 {
+    color: pink
+}
+
+h4 {
+    color: rgb(255, 255, 0);
+}
