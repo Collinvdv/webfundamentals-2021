@@ -1,0 +1,16 @@
+h1 {
+    font-family: "Verdana", "Times New Roman", sans-serif;
+}
+
+h2 {
+    font-family: "Festive", cursive;
+
+    font-size: 60px;
+    color: red;
+
+    text-decoration: underline;
+
+    font-style: normal;
+
+    font-weight: normal;
+}

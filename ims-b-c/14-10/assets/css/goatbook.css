@@ -1,0 +1,56 @@
+body {
+    /* background-color: green; */
+    /* background-image: url("../images/goat.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center; */
+}
+
+.profilepicture {
+    width: 250px;
+    height: 250px;
+
+    background-color: red;
+
+    border-radius: 100%;
+
+    background-image: url("../images/goat.jpeg");
+    background-size: cover;
+
+    border: 5px solid white;
+
+    background-position: top center;
+
+}
+
+h1 {
+    /* border-width: 5px;
+    border-style: dashed;
+    border-color: blue; */
+
+    background-color: blue;
+    border: 5px dashed white;
+
+    padding: 50px;
+
+    /* margin-top: 150px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+    margin-left: 150px; */
+
+    /* margin: 150px; */
+
+    /* margin: 150px 150px 150px 150px; */
+
+    /* margin: 150px 50px; */
+
+    margin-bottom: 150px;
+
+    text-transform: uppercase;
+}
+
+.container {
+    width: 60%;
+    background-color: red;
+
+    margin: 0 auto;
+}

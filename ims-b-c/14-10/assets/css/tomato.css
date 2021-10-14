@@ -1,0 +1,39 @@
+body {
+    background-color: lightgreen;
+}
+
+.tomato {
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    /* display: none; */
+    /* visibility: hidden; */
+
+    position: relative;
+}
+
+.steeltje {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
+    transform: rotate(60deg);
+
+    z-index: 2;
+
+}
+
+.steeltje-brown {
+    background-color: brown;
+    opacity: 0.5;
+
+    transform: rotate(40deg);
+
+    z-index: 1;
+}

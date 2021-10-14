@@ -1,0 +1,13 @@
+body {
+    background-color: pink;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,64 @@
+
+/*
+    Tagnames typo
+*/
+h1, h2, h3 {
+    color: blue;
+}
+
+h3 {
+    color: lightblue;
+}
+
+/*
+    Change by classname
+*/
+.heading1, .heading2, .heading3 {
+    color: lightskyblue;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/*
+    Change by Id
+*/
+#title-verkeerboetes {
+    /* color: orange; */
+    /* color: #6d5934; */
+    /* color: rgb(255, 0, 200); */
+    /* color: #ED6A5A; */
+}
+
+/* a:link {
+    color: orange;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:active {
+    color: red;
+} */
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+a .text {
+    color: red;
+}
+
+a.active {
+    background-color: green;
+}
