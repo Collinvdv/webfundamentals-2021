@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+}
+
+h1, h2 {
+    text-decoration: underline; 
+}
+
+/*
+    Id
+*/
+#heading-skills {
+    color: orange;
+    font-style: italic;
+}
+
+
+/*
+    Classes
+*/
+.heading2 {
+    color: pink;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.container {
+    width: 80%;
+    background-color: red;
+    margin: 0 auto; /* use the force from right and left so it is centered*/
+
+    /* margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; */
+}

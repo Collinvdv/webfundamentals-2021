@@ -1,0 +1,78 @@
+body {
+    background-color: lightgreen;
+}
+
+.tomato {
+    background-color: tomato;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    order: 1;
+
+    flex-wrap: wrap; /* Whenever the element doesn't have space it will go to the next line*/
+}
+
+.tomato-giant {
+    width: 200px;
+    height: 200px;
+
+    order: 0;
+}
+
+.tomato-yellow {
+    background-color: yellowgreen;
+}
+
+.crown {
+    width: 20px;
+    height: 20px;
+
+    background-color: green;
+
+    position: absolute;
+    left: 50%;
+    top: 20px;
+
+    transform: rotate(60deg);
+
+    z-index: 2;
+}
+
+.crown-brown {
+    background-color: brown;
+    transform: rotate(40deg);
+
+    z-index: 1;
+}
+
+.garden {
+    display: flex;
+
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-drection: column-reverse */
+    /* flex-direction: row-reverse; */
+
+    justify-content: space-between; /* will place the tomatos as wide as possible */
+    justify-content: flex-start; /* will begin to the left */
+    justify-content: center; /* will place all the elements to the center */
+    /* justify-content: flex-end; will push everything to the right */
+
+    align-items: center;
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+
+}
+
+@media screen and (max-width: 600px){
+    /* some css for smaller screens */
+
+    body {
+        background-color: white;
+    }
+}

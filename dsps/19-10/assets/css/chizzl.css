@@ -1,0 +1,72 @@
+h1 {
+    color: tomato;
+    color: #4e4e4e;
+
+    font-size: 80px;
+
+    text-decoration: underline; /* Put border underneath it */
+    /* text-decoration: line-through; */
+    /* text-decoration: overline; */
+
+    text-align: left;
+    text-align: center;
+    text-align: center;
+
+    font-style: normal;
+    font-style: italic; /* oblique */
+
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+    text-transform: lowercase;
+
+    letter-spacing: 5px;
+}
+
+/* Used for a link which is not been visited before */
+/* a:link {
+    color: blue;
+} */
+
+/* Used for a link which already has been visited in the past */
+/* a:visited {
+    color: orange;
+} */
+
+/* Whenever a cursor moves inside of the element */
+/* a:hover {
+    background-color: yellow;
+    color: black;
+} */
+
+/* Whenever you click on a tag */
+/*a:active {
+    background-color: black;
+    color: yellow;
+} */
+
+
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: pink;
+}
+
+.list {
+    list-style-type: square;
+}
+
+.card {
+    background-color: lightsalmon;
+    padding: 20px;
+    text-align: center;
+
+
+    /* visibility: hidden; */
+    /* opacity: 0; */
+
+    display: none;
+}
