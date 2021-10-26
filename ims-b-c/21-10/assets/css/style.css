@@ -1,0 +1,79 @@
+body {
+    background-color: green;
+}
+
+/* 
+    Tomaat properties
+*/
+.tomaat {
+    width: 150px;
+    height: 150px;
+
+    background-color: tomato;
+
+    border-radius: 100%;
+
+    position: relative;
+}
+
+.tomaat-yellow-pear {
+    background-color: orange;
+}
+
+.tomaat-small {
+    width: 75px;
+    height: 75px;
+}
+
+/* 
+    Kroontje properties
+*/
+.kroontje {
+    width: 25px;
+    height: 25px;
+
+    background-color: greenyellow;
+
+    position: absolute;
+
+    top: 20px;
+    left: 60px;
+
+    transform: rotate(60deg);
+}
+
+.tomaat-small .kroontje {
+    width: 15px;
+    height: 15px;
+
+    left: 30px;
+}
+
+/*
+    Moestuin
+*/
+.moestuin {
+    display: flex;
+
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    flex-direction: row; /* By default row */
+
+    justify-content: flex-start; /*default for horizontal layouting*/
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+
+    align-items: flex-start; /* vertical layouting */
+    align-items: center;
+    align-items: flex-end;
+}
+
+.tomaat {
+    order: 2;
+}
+
+.tomaat-small {
+    order: 1;
+}

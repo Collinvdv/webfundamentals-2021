@@ -14,7 +14,7 @@ body {
 
     order: 1;
 
-    flex-wrap: wrap; /* Whenever the element doesn't have space it will go to the next line*/
+    flex-wrap: no-wrap; /* Whenever the element doesn't have space it will go to the next line*/
 }
 
 .tomato-giant {

@@ -1,0 +1,60 @@
+body {
+    background-color: lightgreen;
+}
+
+.tomaat {
+    width: 150px;
+    height: 150px;
+
+    background-color: tomato;
+    border-radius: 50%;
+
+    position: relative;
+
+    order: 1;
+}
+
+.tomaat-yellow-pear {
+    background-color:darkgoldenrod;
+}
+
+.tomaat-small {
+    width: 75px;
+    height: 75px;
+
+    order: 0;
+}
+
+.kroontje {
+    width: 30px;
+    height: 30px;
+
+    background-color: green;
+
+    position: absolute;
+    top: 10px;
+    left: 50px;
+
+    transform: rotate(50deg);
+}
+
+.tomaat-small .kroontje {
+    width: 20px;
+    height: 20px;
+    left: 20px;
+}
+
+.moestuin {
+    display: flex;
+
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    justify-content: center; /* Position horizontally when flex-direction is row*/
+    justify-content: flex-end; /* zet ze hellemaal rechts */
+    justify-content: space-between;
+
+    align-items: center;
+}
