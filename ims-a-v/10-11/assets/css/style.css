@@ -1,0 +1,20 @@
+.moestuin {
+    display: flex;
+    background-color:forestgreen;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.tomato, .paprika {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+
+    margin: 10px;
+
+    background-color: tomato;
+}
+
+.paprika {
+    background-color: orange;
+}
