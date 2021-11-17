@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Grocery list
+        </h1>
+
+        <!-- Grocery list -->
+        <ul class="js-list">
+
+        </ul>
+
+        <!-- Add items to grocery list -->
+        <label for="input-ingredient">
+            Ingredient
+        </label>
+
+        <br>
+
+        <input type="text" id="input-ingredient" >
+
+        <br>
+
+        <button class="js-add-ingredient">
+            Add ingredient
+        </button>
+
+        <script>
+            var buttonElement = document.querySelector(".js-add-ingredient");
+            var inputIngredientElement = document.querySelector("#input-ingredient");
+            var listElement = document.querySelector(".js-list");
+
+            buttonElement.addEventListener("click", function() {
+                // fetch the value of the input field
+                var ingredient = inputIngredientElement.value;
+
+                // create an html tag
+                var ingredientElement = document.createElement("li"); //<li><li>
+                ingredientElement.innerHTML = ingredient; //<li>banana</li>
+
+                // add to the list
+                listElement.append(ingredientElement);
+            });
+
+        </script>
+    </body>
+</html>

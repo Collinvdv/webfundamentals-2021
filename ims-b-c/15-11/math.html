@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Math
+        </h1>
+
+        <label for="input-number">
+            Nummer:
+        </label>
+
+        <input type="number" id="input-number"/>
+
+        <button class="js-button-square">
+            Calculate square
+        </button>
+
+        <script>
+            var buttonSquare = document.querySelector(".js-button-square");
+            var inputElement = document.querySelector("#input-number");
+
+            buttonSquare.addEventListener("click", function() {
+                // haal ik de waarde op van de input field
+                var result = square(inputElement.value);
+
+                // fabriceer ik een een html element'
+                var resultElement = document.createElement("p"); //<p></p>
+                resultElement.innerHTML = "De square is " + result; //<p> De square is .. </p>
+
+                document.querySelector("body").append(resultElement);
+            });
+
+            function square(number) { //number = 5
+                if (number < 0) {
+                    return "Geen goesting, ben al van half negen bezig";
+                }
+
+                var result = number * number;
+
+                return result;
+            }
+        </script>
+    </body>
+</html>

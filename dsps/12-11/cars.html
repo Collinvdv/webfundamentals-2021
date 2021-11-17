@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .is-active {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="assets/img/volvo.png" alt="volvo car" class="js-car" />
+
+        <!-- <img src="assets/img/mustang.webp"> -->
+        <button class="js-button-change-image">
+            change the image of the car
+        </button>
+
+        <button id="button-1">
+            click me
+        </button>
+
+        <button id="button-2">
+            click me
+        </button>
+
+        <script>
+            var button1 = document.querySelector("#button-1");
+            var button2 = document.querySelector("#button-2");
+
+            button1.addEventListener("click", function() {
+                makeElementActive(button1);
+            });
+
+            button2.addEventListener("click", function() {
+                makeElementActive(button2);
+            });
+
+            function makeElementActive(element) { // element = button1; 
+                element.classList.toggle("is-active");
+            }
+            // var buttonElement = document.querySelector(".js-button-change-image");
+            // var imageElement = document.querySelector(".js-car");
+
+            // buttonElement.addEventListener("click", function() {
+            //     imageElement.setAttribute("src", "assets/img/mustang.webp");
+            //     imageElement.setAttribute("alt", "mustang image");
+            // });
+
+            // var newImage = document.createElement("img"); //<img />
+            // newImage.setAttribute("src", "assets/img/mustang.webp"); //<img src="assets/img/mustang.webp" />
+            // newImage.setAttribute("alt", "here is a mustang");
+
+            // document.querySelector("body").prepend(newImage);
+
+            // document.body.removeChild(imageElement);
+
+            // console.log(document);
+            // console.log(window.innerHeight);
+            // console.log(window.innerWidth);
+
+
+
+
+        </script>
+    </body>
+</html>

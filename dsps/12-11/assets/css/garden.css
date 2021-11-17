@@ -1,0 +1,40 @@
+.garden {
+    background-color: greenyellow;
+
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.tomato {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%;
+
+    background-color: tomato;
+
+    margin: 10px;
+}
+
+.potato {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%;
+
+    background-color: burlywood;
+
+    margin: 10px;
+}
+
+.paprika {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%;
+
+    background-color: orange;
+
+    margin: 10px;
+}

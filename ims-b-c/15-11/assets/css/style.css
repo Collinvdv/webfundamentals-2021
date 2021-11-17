@@ -1,0 +1,25 @@
+.moestuin {
+    background-color: greenyellow;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.tomaat, .paprika, .patat {
+    width: 69px;
+    height: 69px;
+    margin: 10px;
+
+    background-color: tomato;
+
+    border-radius: 100%;
+}
+
+.paprika {
+    background-color: orange;
+}
+
+.patat {
+    background-color: burlywood;
+}
