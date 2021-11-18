@@ -1,0 +1,11 @@
+body {
+    background-color: lightgray;
+}
+
+.authenticated {
+    background-color: green;
+}
+
+.not-authenticated {
+    background-color: red;
+}
