@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .guessed {
+            color: green;
+        }
+
+        .cards {
+            padding: 20px;
+            width: 45%;
+
+            border: 2px solid black;
+            margin: 20px;
+            text-align: center;
+            background-color: black;
+        }
+
+        .clicked {
+            background-color: white;
+        }
+
+        #game {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Amount of failed attempts <span id="amount">0</span>
+    </h1>
+    <div id="game">
+    </div>
+
+    <script>
+        // link with game
+        var game = document.querySelector("#game");
+        var amount = 0;
+        var characters = [
+            {
+                id: 1,
+                name: "harry"
+            },
+            {
+                id: 2,
+                name: "harry"
+            },
+            {
+                id: 3,
+                name: "ron"
+            },
+            {
+                id: 4,
+                name: "ron"
+            },
+            {
+                id: 5,
+                name: "hermione"
+            },
+            {
+                id: 6,
+                name: "hermione"
+            },
+            {
+                id: 7,
+                name: "voldemort"
+            },
+            {
+                id: 8,
+                name: "voldemort"
+            }
+        ];
+
+        characters = characters.sort(() => Math.random() - 0.5)
+
+        // Create the html card
+        for ( var index = 0; index < characters.length; index++) {
+            var element = document.createElement("div");
+            element.innerHTML = characters[index].name;
+            element.dataset.name = characters[index].name;
+            element.classList.add("cards");
+
+            game.append(element);
+        }
+
+        // Let them listen + play the game
+        var cards = document.querySelectorAll(".cards");
+        var selectedCards = [];
+
+        for (var index = 0; index < cards.length; index++ ) {
+            cards[index].addEventListener("click", function() {
+                if (this.classList.contains("guessed") == false) {
+                    // NOT YET GUESSED SHOW THE IMAGE
+                    selectedCards.push(this);
+
+                    this.classList.add("clicked");
+                }
+
+                if (selectedCards.length == 2 ) {
+                    if (selectedCards[0].dataset.name == selectedCards[1].dataset.name) {
+                        // WE GOT A MATCH
+                        selectedCards[0].classList.add("guessed");
+                        selectedCards[1].classList.add("guessed");
+
+                        selectedCards = [];
+                        
+                        // check if game is done
+                        console.log(document.querySelectorAll(".cards.guessed").length );
+                        if (document.querySelectorAll(".cards.guessed").length == 8) {
+                            alert("GAME IS DONE");
+                        }
+                    } else {
+                        // NO MATCH GO BACK
+                        amount++
+                        document.querySelector("#amount").innerHTML = amount;
+
+                        setTimeout(function() {
+                            selectedCards[0].classList.remove("clicked");
+                            selectedCards[1].classList.remove("clicked");
+
+                            selectedCards = [];
+
+                        }, 1000)
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>
