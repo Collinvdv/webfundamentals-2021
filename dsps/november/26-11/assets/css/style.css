@@ -1,0 +1,20 @@
+body {
+    background-color:lightblue;
+}
+
+.card {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    background-color: black;
+}
+
+.visible {
+    background-color: white;
+}
+
+.guessed {
+    background-color: green;
+}
