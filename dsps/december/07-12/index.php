@@ -14,10 +14,10 @@
         <!-- song list from a database -->
         <?php
             // credentials to access the DB
-            $hostname = "ID291816_spotify.db.webhosting.be"; // also called hostname
-            $dbUsername = "ID291816_spotify";
-            $dbPassword = "ID291816_spotify";
-            $dbName = "ID291816_spotify";
+            $hostname = "localhost"; // also called hostname
+            $dbUsername = "spotify";
+            $dbPassword = "supersecretpassword";
+            $dbName = "spotify";
 
             // $dbPort = 8889 // port: 3306 sql port
 
