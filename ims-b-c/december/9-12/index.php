@@ -5,28 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
     </head>
     <body>
+        <?php
+            include "php_library/components/navigation.php";
+        ?>
+
         <h1> Spotify list </h1>
         <ul>
             <?php
-                $hostname = "localhost"; // kunde hier ook veranderen naar combell server
-                $dbUser = "spotifyUser";
-                $dbPassword = "supersecretpassword";
-                $dbName = "spotify";
-                $dbPort = 8889;
-
-                $conn = mysqli_connect($hostname, $dbUser, $dbPassword, $dbName, $dbPort);
-
-                // checken of de connectie nog werkt
-                if ($conn == false) {
-                    echo "Aj aj t is broke";
-                    die();
-                }
+                include "php_library/db/connection.php";
+                $database = new Database();
+                // get connection with DB
+                $database->createConnection();
 
                 // get all songs
-                $getSql = "select * from songs;";
-                $songs = mysqli_query($conn, $getSql)->fetch_all(MYSQLI_ASSOC);
+                $songs = $database->getQuery("select * from songs;");
 
                 foreach ($songs as $song) {
             ?>
@@ -37,6 +32,8 @@
                 </li>
             <?php
                 }
+
+                $database->closeConnection();
             ?>
         </ul>
 
