@@ -5,14 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     </head>
     <body>
         <h1>
-            Choose a shoe
+            Webshop
         </h1>
-        <script src="assets/js/script.js">
-            
-        </script>
+        <ul>
+            <?php
+                include "db/index.php";
+            ?>
+        </ul>
     </body>
 </html>
