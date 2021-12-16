@@ -40,16 +40,8 @@
             return mysqli_query($this->connection, $sql)->fetch_all(MYSQLI_ASSOC);
         }
 
+        function insertQuery($sql) {
+            mysqli_query($this->connection, $sql);
+        }
+
     }
-
-    $databaseLocal = new Database("localhost", "root", "root", "webshop-ims-bc", 8889);
-
-    // get all the products
-    $products = $databaseLocal->getQuery("select * from products;");
-
-    foreach($products as $product) {
-        echo "<li>" . $product["name"] . " " . $product["color"] . "</li>";
-    }
-
-    $databaseSpotify = new Database("localhost", "root", "root", "spotify", 8889);
-    var_dump($databaseSpotify->getQuery("select * from songs;"));
