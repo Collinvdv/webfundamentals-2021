@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Overview products </h1>
+
+        <ul>
+        </ul>
+
+        <input type="text" id="name">
+        <input type="text" id="color">
+        <button id="add-product">
+            Add button
+        </button>
+
+        <form method="GET" action="api/addProduct.php">
+            <input type="text" id="name" name="name">
+            <input type="text" id="color" name="color">
+            <input type="submit" />
+        </form>
+
+        <script>
+            // fetch all the products
+            fetch("http://localhost:8888/api/products.php")
+                .then(function(response) {
+                    return response.json();
+                }).then(function(products) {
+                    console.log(products);
+                    for (var i = 0; i < products.length; i++) {
+                        var productElement = document.createElement("li");
+                        productElement.innerHTML = products[i].name + " " + products[i].color
+
+                        document.querySelector("ul").append(productElement);
+                    }
+                });
+
+            document.querySelector("#add-product").addEventListener("click", function() {
+                var productName = document.querySelector("#name").value;
+                var productColor = document.querySelector("#color").value;
+
+                fetch("/api/addProduct.php?name="+productName+"&color="+productColor);
+                console.log(productName);
+                console.log(productColor);
+            });
+        </script>
+    </body>
+</html>
