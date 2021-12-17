@@ -1,11 +1,11 @@
 <?php
     class Database {
         // properties
-        private $hostname = "localhost";
-        private $username = "root";
-        private $password = "root";
-        private $database = "webshop-dsps";
-        private $port = 8889; // 3306
+        private $hostname = "ID291816_sortinghatdsps.db.webhosting.be";
+        private $username = "ID291816_sortinghatdsps";
+        private $password = "Collintje123";
+        private $database = "ID291816_sortinghatdsps";
+        private $port = 3306; // 3306
         public $conn;
 
         // constructor
