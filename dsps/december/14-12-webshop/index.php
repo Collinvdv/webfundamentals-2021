@@ -11,7 +11,7 @@
 
         <?php
             include "db/index.php";
-            $database1 = new Database();
+            $database = new Database();
             $products = $database1->selectQuery("select * from products;");
             var_dump($products);
         ?>
