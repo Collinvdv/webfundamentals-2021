@@ -12,7 +12,7 @@
         <?php
             include "db/index.php";
             $database = new Database();
-            $products = $database1->selectQuery("select * from products;");
+            $products = $database->selectQuery("select * from products;");
             var_dump($products);
         ?>
     </body>
